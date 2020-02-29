@@ -11,10 +11,16 @@ public class MyStarterClient {
     public static void main(String[] args) {
         ApplicationContext applicationContext = SpringApplication.run(MyStarterClient.class, args);
 
+//        MyLibraryClass myLibraryClass = applicationContext.getBean(MyLibraryClass.class);
+//        myLibraryClass.printInfo();
+//
+//        MyLibraryClass myLibraryClass1 = (MyLibraryClass) applicationContext.getBean("myLibraryClass");
+//        myLibraryClass1.printInfo();
+
+//        MyLibraryClass myLibraryClass2 = (MyLibraryClass) applicationContext.getBean("my.property");
+//        myLibraryClass2.printInfo();
+
         MyLibraryClass myLibraryClass = applicationContext.getBean(MyLibraryClass.class);
         myLibraryClass.printInfo();
-
-        MyLibraryClass myLibraryClass1 = (MyLibraryClass) applicationContext.getBean("myLibraryClass");
-        myLibraryClass1.printInfo();
     }
 }
